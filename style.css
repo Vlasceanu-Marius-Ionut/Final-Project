@@ -41,9 +41,8 @@ header {
   height: 6vh;
   display: flex;
   flex-direction: column;
-  gap: 10%;
-  align-items: center;
   justify-content: center;
+  gap: 10%;
   cursor: pointer;
 }
 
@@ -115,8 +114,8 @@ main {
   align-items: start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  overflow: scroll;
-  overflow:hidden;
+  overflow: hidden;
+  overflow: auto;
 }
 
 .item1,
@@ -157,7 +156,7 @@ main {
   color: white;
 }
 
-.sometext h1 {
+.sometext h2 {
   font-size: 32px;
   font-weight: bold;
 }
@@ -175,15 +174,18 @@ main {
 }
 
 .smallcontainer2 {
-  width: 100%;
+  width: 65%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 .smallcontainer2 img {
   border-radius: 20px;
+  height: auto;
+  width: 600px;
 }
 
 .text2 {
@@ -191,7 +193,7 @@ main {
   padding: 2%;
 }
 
-.text2 h1 {
+.text2 h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -203,6 +205,8 @@ main {
 
 .text2 ul li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .text2 ul li span {
@@ -220,7 +224,7 @@ main {
   background-color: rgb(249, 249, 249);
 }
 
-.ourclients h1 {
+.ourclients h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -229,6 +233,7 @@ main {
 .ourclients p {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .forimage img {
@@ -263,7 +268,7 @@ footer {
   gap: 1%;
 }
 
-.fortheimage h1 {
+.fortheimage h2 {
   font-size: 32px;
   font-weight: bold;
   margin-right: 10px;
@@ -289,6 +294,7 @@ footer {
 .Last-links:hover {
   color: rgba(0, 0, 0, 0.9);
 }
+
 .allright {
   width: 100%;
   font-size: 12px;
@@ -297,18 +303,13 @@ footer {
   justify-content: center;
   font-weight: bold;
 }
-@media only screen and (max-width: 770px) {
-  /* Header Styles */
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
-    padding: 20px;
-  }
 
-  .burger-menu {
-    margin-bottom: 10px;
+/* Media Queries */
+@media (max-width:900px) {
+  /* Header Styles */
+  html {
+    font-size: 55%;
+    
   }
 
   .logo {
@@ -317,10 +318,15 @@ footer {
     justify-content: center;
     margin-bottom: 10px;
   }
-
   .logo .pog {
     margin: 0 4px;
     font-size: 24px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .contact {
+    display: none;
   }
   /* Main Styles */
   main {
@@ -352,67 +358,169 @@ footer {
 
   .sometext {
     height: auto;
-    padding: 10px;
+    padding: 40px;
+  }
+  .sometext h2{
+    font-size: 20px;
   }
 
   /* Second Section Styles */
   .bigcontainer2 {
-    padding: 10px;
-  }
 
-  .smallcontainer2 img {
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
-  .text2 h1 {
-    font-size: 26px;
-    width: 225px;
+  .smallcontainer2 img {
+    width: auto;
+    height: auto;
   }
 
-  ul {
-    width: 225px;
-    font-size: 11.5px;
+  .text2 h2 {
+    font-size: 25px;
+    width: 25rem;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    width: 20rem;
   }
 
-  /* Clients */
+  /* Our Clients Styles */
   .ourclients {
     margin-top: 5%;
-    gap: 50px;
+    gap: 40px;
+  }
+  .ourclients p{
+    font-size: 18px;
+    text-align: center;
+  }
+  /* Footer Styles */
+  .Links {
+    width: 80%;
+    flex-wrap: wrap;
   }
 
+  .Last-links {
+    display: flex;
+    font-size: 20px;
+    padding: 20px 110px;
+    margin-bottom: 10px;
+  }
+}
+@media(max-width:620px){
   /* Footer Styles */
-
   .Links {
     width: 100%;
     flex-wrap: wrap;
   }
 
   .Last-links {
-    font-size: 16px;
-    padding: 10px 20px;
+    display: flex;
+    font-size: 20px;
+    padding: 20px 110px;
     margin-bottom: 10px;
   }
+  .ourclients {
+    margin-top: 5%;
+    gap: 30px;
+  }
+  .ourclients p{
+    font-size: 15px;
+    text-align: center;
+  }
 }
-@media only screen and (max-width:290px){
-  .smallcontainer2 img {
+@media(max-width:490px){
+  /* Footer Styles */
+  .Links {
     width: 100%;
-    height: auto;
+    flex-wrap: wrap;
   }
 
-  .text2 h1 {
-    font-size: 22px;
-    width: 200px;
+  .Last-links {
+    display: flex;
+    font-size: 15px;
+    padding: 20px 110px;
+    margin-bottom: 10px;
+  }
+  .ourclients {
+    margin-top: 5%;
+    gap: 40px;
+  }
+  .ourclients p{
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media(max-width:450px){
+  /* Footer Styles */
+  .Links {
+    width: 100%;
+    flex-wrap: wrap;
   }
 
-  ul {
+  .Last-links {
+    display: flex;
+    font-size: 12px;
+    padding: 19px 90px;
+    margin-bottom: 10px;
+  }
+  .smallcontainer2 {
+    width: 90%;
+  }
+}
+@media(max-width:350){
+  .text2 ul li {
+    width: 250px;
+  }
+}
+@media(max-width:320){
+  .text2 ul li {
     width: 200px;
-    font-size: 12.5px;
   }
 }
-@media only screen and (max-width:300px){
-  *{
-    width: auto;
-    height: auto;
+@media(max-width:390px){
+  /* Footer Styles */
+  .Links {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .Last-links {
+    display: flex;
+    font-size: 12px;
+    padding: 18px 60px;
+    margin-bottom: 10px;
+  }
+  .ourclients {
+    margin-top: 5%;
+    gap: 40px;
+  }
+  .ourclients p{
+    font-size: 13px;
+    text-align: center;
+  }
+  .text2 ul li {
+    width: 300px;
   }
 }
+@media (max-width: 350px) {
+  /* Footer Styles */
+  .Links {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .Last-links {
+    display: flex;
+    font-size: 12px;
+    padding: 19px 60px;
+    margin-bottom: 10px;
+  }
+  
+  .text2 ul li {
+    width: 200px;
+  }
+}
+/* Media Queries */
