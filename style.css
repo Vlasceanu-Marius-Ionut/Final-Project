@@ -116,6 +116,7 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
   overflow: scroll;
+  overflow:hidden;
 }
 
 .item1,
