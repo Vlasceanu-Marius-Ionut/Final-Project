@@ -12,7 +12,7 @@
   <header>
     <!--Top+nav-->
     <div class="header-container">
-      <div class="burger-menu">
+      <div id="burger-menu" class="burger-menu" onclick="onClickingLinks()">
         <div class="b-bar1"></div>
         <div class="b-bar2"></div>
         <div class="b-bar3"></div>
@@ -24,10 +24,29 @@
         </a>
         <h1 class="pog">World</h1>
       </div>
-      <div class="contact">
+      <div id="contacts" class="contact" onclick="onClickingContact()">
         <a href="#">Contact</a>
       </div>
     </div>
+    <!--MENUJS-->
+    <div class="menu-overlay">
+      <div class="menu-links">
+        <a href="#">Vending Machine</a>
+        <a href="#">Office Coffee</a>
+        <a href="#">Commercial</a>
+        <a href="#">More Coffee</a>
+        <a href="#">Micro Market</a>
+        <a href="#">All Solutions</a>
+        <a href="#">Our Service</a>
+        <a href="#">Digital Solutions</a>
+        <a href="#">Inventors</a>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Contact us</a>
+      </div>
+    </div>
+    <!--END-OFMENUJS-->
   </header>
   <main>
     <!--First page-->
@@ -84,7 +103,7 @@
   </main>
   <footer>
     <div class="bigcontainer3">
-    <div class="logo">
+    <div class="logos">
       <h1 class="pog">Coffee</h1>
       <a href="#">
         <img src="Daco_602415.png" alt="Coffee World Logo">
@@ -108,8 +127,9 @@
     </div>
   </div>
   <div class="allright">
-    <p>All rights reserved. Vlasceanu Marius-Ionut 2023./</p>
+    <p>All rights reserved. Vlasceanu Marius-Ionut 2023.</p>
   </div>
   </footer>
+  <script src="js.js"></script>
 </body>
 </html>
