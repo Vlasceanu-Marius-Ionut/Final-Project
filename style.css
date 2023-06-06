@@ -376,7 +376,15 @@ footer {
   justify-content: center;
   font-weight: bold;
 }
+/*PAGE2*/
+.containerforvenderandimg{
+  width: 100%;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
 
+}
 /* Media Queries */
 @media (max-width:1000px) {
   .bigcontainer1 {
