@@ -1,0 +1,89 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: linear 0.3s;
+}
+
+/* Global Styles */
+body {
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(71, 7, 7);
+  box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+}
+
+.header-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  margin-left: 70px;
+}
+
+.burger-menu {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  cursor: pointer;
+}
+
+.b-bar1,
+.b-bar2,
+.b-bar3 {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo .pog {
+  color: rgb(0, 0, 0);
+  margin: 4%;
+}
+
+.logo img {
+  width: 57px;
+}
+
+.contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: orange;
+  border: 1px rgb(187, 124, 7) solid;
+  border-radius: 20px;
+  min-width: 130px;
+  height: 42px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact a:hover {
+  background-color: white;
+  color: orange;
+}
