@@ -9,6 +9,7 @@ menuOverlay.addEventListener('click', () => {
   document.body.classList.remove('menu-open');
 });
 
+
 function addClickListenerToItems() {
   const itemClasses = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']; 
 
