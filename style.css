@@ -193,13 +193,13 @@ main {
   transition: transform 0.3s ease;
 }
 .item1{
-  background-image: url('/images/micromarket.png');
+  background-image: url('micromarket.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .item2 {
-  background-image: url('/images/modern\ coffee.png');
+  background-image: url('modern\ coffee.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -225,9 +225,9 @@ main {
 .item4 a,
 .item5 a,
 .item6 a {
-  color: rgba(0, 0, 0, 0.849);
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 /* Some Text Styles */
