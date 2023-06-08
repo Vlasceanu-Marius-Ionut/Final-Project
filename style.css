@@ -26,6 +26,7 @@ header {
   justify-content: center;
   background-color: rgb(71, 7, 7);
   box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2);
+  z-index: 9999; 
 }
 
 .header-container {
@@ -77,7 +78,7 @@ header {
   color: rgb(255, 255, 255);
   background-color: orange;
   border: 1px rgb(187, 124, 7) solid;
-  border-radius: 20px;
+  border-radius: 30px;
   min-width: 130px;
   height: 42px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -149,17 +150,19 @@ main {
 
 .bigcontainer1 {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .smallcontainer1 {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   margin-top: 1%;
   gap: 1%;
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   align-items: start;
@@ -167,9 +170,9 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
-  overflow: auto;
-}
 
+}
+/*StyleSquare*/
 .item1,
 .item2,
 .item3,
@@ -189,7 +192,22 @@ main {
   justify-content: center;
   transition: transform 0.3s ease;
 }
-
+.item1{
+  background-image: url('/images/micromarket.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.item2 {
+  background-image: url('/images/modern\ coffee.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.item3 {
+  background-image: url('im');
+}
+/*Border*/
 .item1:hover,
 .item2:hover,
 .item3:hover,
@@ -200,7 +218,7 @@ main {
   border:solid 2px rgba(240, 92, 0, 0.295);
 }
 
-
+/*Links*/
 .item1 a,
 .item2 a,
 .item3 a,
@@ -209,7 +227,7 @@ main {
 .item6 a {
   color: rgba(0, 0, 0, 0.849);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* Some Text Styles */
@@ -376,15 +394,6 @@ footer {
   justify-content: center;
   font-weight: bold;
 }
-/*PAGE2*/
-.containerforvenderandimg{
-  width: 100%;
-  height: 20vh;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-
-}
 /* Media Queries */
 @media (max-width:1000px) {
   .bigcontainer1 {
@@ -545,6 +554,11 @@ footer {
     text-align: center;
   }
 }
+@media(max-width:600px){
+  .bigcontainer2 img {
+    width: 100%;
+  }
+}
 @media(max-width:580px){
   .burger-menu {
     width: 100px;  
@@ -556,10 +570,18 @@ footer {
     display: none;
   }
 }
+@media(max-width:500px){
+  .bigcontainer2 img {
+    width: 100%;
+  }
+}
 @media(max-width:490px){
   /* Footer Styles */
   .logos img {
     width: 70px;
+  }
+  .bigcontainer2 img {
+    width: 100%;
   }
   .logos {
     display: flex;
@@ -599,6 +621,12 @@ footer {
   justify-content: center;
 }
 }
+@media (max-width:498px) {
+  .Last-links {
+    display: flex;
+    font-size: 19px;
+  }
+}
 @media(max-width:450px){
   /* Footer Styles */
   .Links {
@@ -636,6 +664,81 @@ footer {
   .ourclients p{
     font-size: 13px;
     text-align: center;
+  }
+}
+@media(max-width:300px){
+  .bigcontainer2 {
+    width: 100%;
+  }
+  .smallcontainer2 {
+    width:100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .smallcontainer2 h2 {
+    font-size: 25px;
+  }
+  .smallcontainer2 li {
+    font-size: 15px;
+  }
+}
+@media(max-width:304px){
+  .bigcontainer2 img {
+    width: 100%;
+  }
+  .header-container{
+    width: 100%;
+  }
+}
+@media(max-width:222px){
+  .bigcontainer2 {
+    width: 100%;
+  }
+  .smallcontainer2 {
+    width:100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  img {
+    width: 30px;
+  }
+  .smallcontainer2 h2 {
+    font-size: 23px;
+  }
+  .smallcontainer2 li {
+    font-size: 10px;
+  }
+  .header-container{
+    width: 10px;
+  }
+  header {
+    width: 90%;
+    height: 20px;
+  }
+  .allright {
+    font-size: 8px;
+  }
+}
+@media(max-width:208px) {
+  .bigcontainer2 img {
+    width: 100%;
+  }
+  .bigcontainer2 {
+    width: 100%;
+  }
+  .smallcontainer2 {
+    width:100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .smallcontainer2 h2 {
+    font-size: 23px;
+  }
+  .smallcontainer2 li {
+    font-size: 10px;
   }
 }
 /* Media Queries */
