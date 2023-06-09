@@ -529,12 +529,6 @@ footer {
 }
 @media(max-width:620px){
   /* Footer Styles */
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-  }
   .Links {
     width: 100%;
     flex-wrap: wrap;
@@ -566,11 +560,11 @@ footer {
   }
   .menu-links {
     position: fixed;
-    top: 85px;
-    right: 110px;
+    top: 10%;
+    right: 14%;
     transform: translate(0%, -100%);
     height: 70%;
-    width: 355px;
+    width: 70%;
     background-color: rgb(239, 239, 239);
     transition: height 0.8s ease;
     display: flex;
@@ -597,6 +591,11 @@ footer {
   /* Footer Styles */
   .logos img {
     width: 70px;
+  }
+  .menu-links {
+    position: fixed;
+    top: 10%;
+    right: 15%;
   }
   .bigcontainer2 img {
     width: 100%;
@@ -625,25 +624,20 @@ footer {
     font-size: 15px;
     text-align: center;
   }
-  .menu-links {
-  position: fixed;
-  right: 0;
-  height: 100%;
-  width: 180px;
-  background-color: rgb(239, 239, 239);
-  transform: translateX(100%);
-  transition: transform 0.8s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 }
 @media (max-width:498px) {
   .Last-links {
     display: flex;
-    font-size: 19px;
+    font-size: 15px;
+    padding: 2% 16%;
+    margin-bottom: 10px;
   }
+  .menu-links {
+    position: fixed;
+    top: 10%;
+    right: 15%;
+  }
+  
 }
 @media(max-width:450px){
   /* Footer Styles */
@@ -700,6 +694,12 @@ footer {
   .smallcontainer2 li {
     font-size: 15px;
   }
+  .Last-links {
+    display: flex;
+    font-size: 12px;
+    padding: 2% 15%;
+    margin-bottom: 10px;
+  }
 }
 @media(max-width:304px){
   .bigcontainer2 img {
@@ -709,9 +709,15 @@ footer {
     width: 100%;
   }
 }
-@media(max-width:222px){
+@media(max-width:220px){
   .bigcontainer2 {
     width: 100%;
+  }
+  .burger-menu {
+    position: fixed;
+  }
+  html {
+    font-size: 10%;
   }
   .smallcontainer2 {
     width:100%;
@@ -723,7 +729,7 @@ footer {
     width: 30px;
   }
   .smallcontainer2 h2 {
-    font-size: 23px;
+    font-size: 20px;
   }
   .smallcontainer2 li {
     font-size: 10px;
@@ -731,12 +737,22 @@ footer {
   .header-container{
     width: 10px;
   }
-  header {
-    width: 90%;
-    height: 20px;
+  .menu-links {
+    position: fixed;
+    top: 10%;
+    right: 15%;
   }
   .allright {
     font-size: 8px;
+  }
+  .bigcontainer3 img {
+    width: 100%;
+  }
+  .Last-links {
+    display: flex;
+    font-size: 12px;
+    padding: 2% 10%;
+    margin-bottom: 10px;
   }
 }
 @media(max-width:208px) {
@@ -753,7 +769,7 @@ footer {
     justify-content: start;
   }
   .smallcontainer2 h2 {
-    font-size: 23px;
+    font-size: 20px;
   }
   .smallcontainer2 li {
     font-size: 10px;
