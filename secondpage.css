@@ -80,42 +80,45 @@ header {
   border-radius: 20px;
   min-width: 130px;
   height: 42px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:  0.3s ease, color 0.3s ease;
 }
 
 .contact a:hover {
   background-color: white;
   color: orange;
 }
+/*Maincontainer*/
 .maincontanier {
   width: 100%;
-  height: 100%vh;
-  background-color: rgba(161, 34, 34, 0.668);
+  height: 100%;
+  background-color: bisque;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10% 5%;
+  text-align: center;
 }
-
-.vending {
-  width: 70%;
-  height: 100vh;
-  border: solid rgba(141, 141, 141, 0.604) 3px;
-  background-color: rgb(255, 255, 255);
+/*Coffee to go*/
+.cofetogo {
+  width: 100%;
+  height:100vh;
+  border:solid rgba(141, 141, 141, 0.604) 3px;
+  background-color:rgba(135, 66, 6, 0.39);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5%;
 }
 
-.vending img {
+.cofetogo img {
   width: 70%;
   height: auto;
   max-height: 50%;
   object-fit: contain;
   margin-bottom: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.443);
+  margin-top: 5%;
 }
 
 h2 {
@@ -123,16 +126,293 @@ h2 {
   text-decoration: underline;
   margin-bottom: 1%;
 }
-p,
-.vendingtext {
-  color: rgb(0, 0, 0);
-  line-height: 28px;
-  text-align: center;
-  font-size: 15px;
+p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 200%;
+  color: #333333;
+  margin-bottom: 20px;
   font-weight: bold;
+  padding:1%;
 }
-.underline {
-  width: 15px;
-  height: 15px;
-  color: black;
+/*officecoffee*/
+.officecoffe {
+  width: 100%;
+  height: 100vh;
+  border: solid rgba(141, 141, 141, 0.604) 3px;
+  background-color:rgba(135, 66, 6, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.officecoffe img {
+  width: 70%;
+  height: auto;
+  max-height: 50%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.443);
+}
+.comercials{
+  width: 100%;
+  height: 100vh;
+  border: solid rgba(141, 141, 141, 0.604) 3px;
+  background-color:rgba(135, 66, 6, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.comercials img {
+   width: 70%;
+  height: auto;
+  max-height: 50%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.443);
+}
+/*moecoffeee*/
+.morecofe{
+  width: 100%;
+  height: 100vh;
+  border: solid rgba(141, 141, 141, 0.604) 3px;
+  background-color:rgba(135, 66, 6, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.morecofe img {
+  width: 70%;
+  height: auto;
+  max-height: 50%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.443);
+}
+/*micromarket*/
+.micromarket {
+  width: 100%;
+  height: 100vh;
+  border: solid rgba(141, 141, 141, 0.604) 3px;
+  background-color:rgba(135, 66, 6, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.micromarket img {
+  width: 70%;
+  height: auto;
+  max-height: 50%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.443);
+}
+/*vending machine*/
+.vendingmachin {
+  width: 100%;
+  height: 100vh;
+  border: solid rgba(141, 141, 141, 0.604) 3px;
+  background-color:rgba(135, 66, 6, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.vendingmachin img {
+  width: 70%;
+  max-height: 37%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.443);
+}
+/*MAP*/
+.contactsmap {
+  width: 100%;
+}
+.contactsmap2 {
+  width: 100%;
+}
+/*Map-container*/
+.contactcontainer {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  background-color: rgb(54, 54, 51);
+  border: solid rgba(141, 141, 141, 0.604) 3px;
+}
+/*Footer*/
+.likefoot {
+  background-color: rgba(255, 255, 255, 0.604);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone{
+  width: 100%;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+}
+.phone ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: underline;
+  color:black;
+}
+::marker {
+  color: transparent;
+}
+/*Likefoot*/
+@media  (max-width: 1850px) {
+  /* Adjust styles for screens smaller than 768px */
+  html {
+    font-size: 75%;
+  }
+  .header-container {
+    margin-left: 0;
+  }
+
+  .cofetogo img,
+  .officecoffe img,
+  .comercials img,
+  .morecofe img,
+  .micromarket img,
+  .vendingmachin img {
+    width: 60%;
+    max-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 150%;
+    overflow: scroll;
+  }
+}
+@media  (max-width: 1000px) {
+  .header-container {
+    margin-left: 0;
+  }
+
+  .cofetogo img,
+  .officecoffe img,
+  .comercials img,
+  .morecofe img,
+  .micromarket img,
+  .vendingmachin img {
+    width: 60%;
+    max-height: 30%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media  (max-width: 768px) {
+  .burger-menu {
+    position: static;
+    margin-left: 70px;
+  }
+  .cofetogo img,
+  .officecoffe img,
+  .comercials img,
+  .morecofe img,
+  .micromarket img,
+  .vendingmachin img {
+    width: 60%;
+    max-height: 30%;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .contactcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+  }
+  .burger-menu {
+    width: 100px;  
+  }
+  .menu-links {
+    position: fixed;
+    top: 10%;
+    right: 14%;
+    transform: translate(0%, -100%);
+    height: 80%;
+    width: 70%;
+    background-color: rgb(239, 239, 239);
+    transition: height 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Change justify-content to flex-start */
+    overflow-y: auto;
+    overflow: scroll;
+
+  }
+  
+  .logo {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
+
+@media  (max-width: 480px) {
+  /* Adjust styles for screens smaller than 480px */
+  .cofetogo img,
+  .officecoffe img,
+  .comercials img,
+  .morecofe img,
+  .micromarket img,
+  .vendingmachin img {
+    width: 100%;
+    max-height: 30%;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+@media  (max-width: 320px) {
+  /* Adjust styles for screens smaller than 320px */
+  .cofetogo img,
+  .officecoffe img,
+  .comercials img,
+  .morecofe img,
+  .micromarket img,
+  .vendingmachin img {
+    width: 100%;
+    max-height: 25%;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 130%;
+  }
 }

@@ -231,7 +231,7 @@ main {
   background-size: 40%;
 }
 .item5 {
-  background-image: url(Micromarket-def-2.png);
+  background-image: url('Micromarket-def-2.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
