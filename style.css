@@ -84,6 +84,7 @@ header {
   min-width: 130px;
   height: 42px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .contact a:hover {
@@ -573,8 +574,11 @@ footer {
   .Links {
     width: 100%;
     flex-wrap: wrap;
+    color: white;
   }
-
+  .Links a{
+    color: white;
+  }
   .Last-links {
     display: flex;
     font-size: 20px;
@@ -593,6 +597,9 @@ footer {
 @media(max-width:600px){
   .bigcontainer2 img {
     width: 100%;
+  }
+  .Links a{
+    color: white;
   }
 }
 @media(max-width:580px){

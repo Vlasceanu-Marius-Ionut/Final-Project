@@ -9,6 +9,15 @@ menuOverlay.addEventListener('click', () => {
   document.body.classList.remove('menu-open');
 });
 
+function ToSecondPage() {
+  const secondpage = document.getElementsByClassName('contact')[0];
+  secondpage.addEventListener('click', () => {
+    window.location.href = 'http://127.0.0.1:5500/CoffeeWorld1.html';
+  });
+}
+
+ToSecondPage();
+
 
 function addClickListenerToItems() {
   const itemClasses = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6']; 
@@ -24,5 +33,13 @@ function addClickListenerToItems() {
   });
 }
 
-addClickListenerToItems();
+function toTheBottom() {
+  const col1 = document.getElementById('col1');
+  const col2 = document.getElementById('col2');
 
+  col1.addEventListener('click', () => {
+    col2.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+toTheBottom();

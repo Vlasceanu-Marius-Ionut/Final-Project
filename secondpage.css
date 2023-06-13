@@ -33,28 +33,9 @@ header {
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  font-size: large;
-  margin-left: 70px;
-}
-
-.burger-menu {
-  height: 6vh;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 10%;
-  cursor: pointer;
+  flex-direction: column;
 }
-
-.b-bar1,
-.b-bar2,
-.b-bar3 {
-  width: 40px;
-  height: 5px;
-  background-color: black;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -68,8 +49,8 @@ header {
 
 .logo img {
   width: 57px;
+  position: static;
 }
-
 .contact a {
   display: flex;
   align-items: center;
@@ -77,10 +58,11 @@ header {
   color: rgb(255, 255, 255);
   background-color: orange;
   border: 1px rgb(187, 124, 7) solid;
-  border-radius: 20px;
-  min-width: 130px;
-  height: 42px;
+  border-radius: 5px;
+  min-width: 70px;
+  height: 22px;
   transition:  0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .contact a:hover {
@@ -272,7 +254,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-a {
+a .likefoot{
   text-decoration: underline;
   color:black;
 }
@@ -287,8 +269,8 @@ a {
   }
   .header-container {
     margin-left: 0;
-  }
 
+  }
   .cofetogo img,
   .officecoffe img,
   .comercials img,
@@ -330,10 +312,6 @@ a {
 }
 
 @media  (max-width: 768px) {
-  .burger-menu {
-    position: static;
-    margin-left: 70px;
-  }
   .cofetogo img,
   .officecoffe img,
   .comercials img,
@@ -343,7 +321,6 @@ a {
     width: 60%;
     max-height: 30%;
   }
-
   p {
     font-size: 14px;
     line-height: 150%;
@@ -354,33 +331,6 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #333333;
-  }
-  .burger-menu {
-    width: 100px;  
-  }
-  .menu-links {
-    position: fixed;
-    top: 10%;
-    right: 14%;
-    transform: translate(0%, -100%);
-    height: 80%;
-    width: 70%;
-    background-color: rgb(239, 239, 239);
-    transition: height 0.8s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Change justify-content to flex-start */
-    overflow-y: auto;
-    overflow: scroll;
-
-  }
-  
-  .logo {
-    display: none;
-  }
-  .contact {
-    display: none;
   }
 }
 
