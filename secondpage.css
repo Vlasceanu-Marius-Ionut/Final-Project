@@ -11,9 +11,15 @@
 body {
   display: flex;
   justify-content: center;
-  scroll-behavior: smooth;
   flex-wrap: wrap;
   font-family: Arial, sans-serif;
+}
+::-webkit-scrollbar {
+  color: white;
+  background-color: blanchedalmond;
+  scroll-behavior: smooth;
+  width: 0px;
+  height: 0px;
 }
 
 /* Header Styles */

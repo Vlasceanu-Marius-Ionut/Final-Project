@@ -620,7 +620,8 @@ footer {
     align-items: center;
     justify-content: center; /* Change justify-content to flex-start */
     overflow-y: auto;
-    overflow: scroll;
+    overflow: scroll hidden;
+
 
   }
   
