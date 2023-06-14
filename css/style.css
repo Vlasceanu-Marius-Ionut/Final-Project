@@ -174,7 +174,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
-  background-image: url('maxresdefault.jpg');
+  background-image: url('/images/maxresdefault.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@ main {
   transition: transform 0.3s ease;
 }
 .item1{
-  background-image: url('1695767.png');
+  background-image: url('/images/1695767.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ main {
   background-size: 18%;
 }
 .item2 {
-  background-image: url('pngimg.com\ -\ coffee_machine_PNG102200.png');
+  background-image: url('/images/pngimg.com\ -\ coffee_machine_PNG102200.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -217,14 +217,14 @@ main {
   background-size: 35%;
 }
 .item3 {
-  background-image: url('modern\ coffee.png');
+  background-image: url('/images/modern\ coffee.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
 }
 .item4 {
-  background-image: url('pngegg.png');
+  background-image: url('/images/pngegg.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -232,14 +232,14 @@ main {
   background-size: 40%;
 }
 .item5 {
-  background-image: url('Micromarket-def-2.png');
+  background-image: url('/images/Micromarket-def-2.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
 }
 .item6 {
-  background-image: url('micromarket.png');
+  background-image: url('/images/micromarket.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -337,7 +337,7 @@ main {
 .text2 ul li span {
   margin-right: 10px;
 }
-
+/*End of the second page style*/
 /* Our Clients Styles */
 .ourclients {
   width: 100%;
@@ -366,6 +366,7 @@ main {
   max-width: 600px;
   height: auto;
 }
+/*End of Our Clients Style*/
 
 /* Footer Styles */
 footer {
@@ -436,7 +437,11 @@ footer {
   justify-content: center;
   font-weight: bold;
 }
+/*End of the footer*/
+
 /* Media Queries */
+
+/*MEDIA-1000PX*/
 @media (max-width:1000px) {
   .bigcontainer1 {
     height: auto;
@@ -461,8 +466,9 @@ footer {
     padding: 30px;
   }
 }
+/*MEDIA 900PX*/
 @media (max-width:900px) {
-  /* Header Styles */
+
   .header-container {
     display: flex;
     align-items: center;
@@ -569,6 +575,7 @@ footer {
     margin-bottom: 10px;
   }
 }
+/*MEDIA 620PX*/
 @media(max-width:620px){
   /* Footer Styles */
   .Links {
@@ -594,6 +601,7 @@ footer {
     text-align: center;
   }
 }
+/*MEDIA 600PX*/
 @media(max-width:600px){
   .bigcontainer2 img {
     width: 100%;
@@ -602,6 +610,7 @@ footer {
     color: white;
   }
 }
+/*MEDIA 580PX*/
 @media(max-width:580px){
   .burger-menu {
     width: 100px;  
@@ -632,11 +641,13 @@ footer {
     display: none;
   }
 }
+/*MEDIA 500PX*/
 @media(max-width:500px){
   .bigcontainer2 img {
     width: 100%;
   }
 }
+/*MEDIA 490PX*/
 @media(max-width:490px){
   /* Footer Styles */
   .logos img {
@@ -689,6 +700,7 @@ footer {
   }
   
 }
+/*MEDIA 450PX*/
 @media(max-width:450px){
   /* Footer Styles */
   .Links {
@@ -712,6 +724,7 @@ footer {
     background-color: rgba(255, 0, 0, 0.283);
   }
 }
+/*MEDIA 360PX*/
 @media(max-width:360px){
   /* Footer Styles */
   .Links {
@@ -738,6 +751,33 @@ footer {
     text-align: center;
   }
 }
+/*MEDIA 304PX*/
+
+@media(max-width:304px){
+  .bigcontainer2 img {
+    width: 100%;
+  }
+  .header-container{
+    width: 100%;
+  }
+  .allright {
+    font-size: 8%;
+  }
+  .smallcontainer2 {
+    width:100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .smallcontainer2, img {
+    width:60%;
+  }
+  .text2 li {
+    width: 100%;
+    font-size: 90%;
+  }
+}
+/*MEDIA 300PX*/
 @media(max-width:300px){
   .bigcontainer2 {
     width: 100%;
@@ -765,30 +805,7 @@ footer {
   }
   
 }
-@media(max-width:304px){
-  .bigcontainer2 img {
-    width: 100%;
-  }
-  .header-container{
-    width: 100%;
-  }
-  .allright {
-    font-size: 8%;
-  }
-  .smallcontainer2 {
-    width:100%;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-  }
-  .smallcontainer2, img {
-    width:60%;
-  }
-  .text2 li {
-    width: 100%;
-    font-size: 90%;
-  }
-}
+/*MEDIA 230PX*/
 @media(max-width:230px){
   .bigcontainer2 {
     width: 100%;
@@ -872,7 +889,7 @@ footer {
     font-size: 100%;
   }
 
-
+/*MEDIA 208PX*/
 @media(max-width:208px) {
   .bigcontainer2 img {
     width: 100%;
