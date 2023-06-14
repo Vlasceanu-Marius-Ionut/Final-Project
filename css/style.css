@@ -440,7 +440,6 @@ footer {
 /*End of the footer*/
 
 /* Media Queries */
-
 /*MEDIA-1000PX*/
 @media (max-width:1000px) {
   .bigcontainer1 {
@@ -457,13 +456,12 @@ footer {
 
   .smallcontainer1 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 5px;
     overflow: scroll;
   }
   .smallcontainer1 {
-    width: 500px;
-    padding: 30px;
+    width:100%;
   }
 }
 /*MEDIA 900PX*/
