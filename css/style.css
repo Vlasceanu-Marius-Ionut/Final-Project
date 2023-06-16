@@ -201,7 +201,7 @@ main {
   transition: transform 0.3s ease;
 }
 .item1{
-  background-image: url('/images/1695767.png');
+  background-image: url('images/1695767.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ main {
   background-size: 18%;
 }
 .item2 {
-  background-image: url('/images/pngimg.com\ -\ coffee_machine_PNG102200.png');
+  background-image: url('images/pngimg.com\ -\ coffee_machine_PNG102200.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -217,14 +217,14 @@ main {
   background-size: 35%;
 }
 .item3 {
-  background-image: url('/images/modern\ coffee.png');
+  background-image: url('images/modern\ coffee.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
 }
 .item4 {
-  background-image: url('/images/pngegg.png');
+  background-image: url('images/pngegg.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -232,14 +232,14 @@ main {
   background-size: 40%;
 }
 .item5 {
-  background-image: url('/images/Micromarket-def-2.png');
+  background-image: url('images/Micromarket-def-2.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
 }
 .item6 {
-  background-image: url('/images/micromarket.png');
+  background-image: url('images/micromarket.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
