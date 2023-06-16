@@ -8,3 +8,7 @@ A-ll-a parte este promisiunea companiei catre clienti #valoarepentruclienti.
 A-lll-a parte se refera la importanta clientilor si relatiile pe care compania le are
 
 Ultima parte contine mai multe linkuri care duc pe a ll-a pagina.
+
+Apasand butonul "contact" de pe a-ll-a pagina, acesta are un script de glisare pana in josul paginii, unde vom gasi:
+
+Harta si contactele.
