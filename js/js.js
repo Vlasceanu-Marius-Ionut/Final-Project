@@ -14,7 +14,7 @@ menuOverlay.addEventListener('click', () => {
 function ToSecondPage() {
   const secondpage = document.getElementsByClassName('contact')[0];
   secondpage.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/indexs/CoffeeWorld1.html'
+    window.location.href = 'CoffeeWorld1.html'
   });
 }
 
@@ -29,23 +29,25 @@ function addClickListenerToItems() {
     const items = document.querySelectorAll(`.${itemClass}`);
 
     items.forEach(item => {
-      item.addEventListener('click', () => {
-        window.location.href = 'http://127.0.0.1:5500/indexs/CoffeeWorld1.html';
+      item.addEventListener('click', (event) => {
+        const targetPage = 'CoffeeWorld1.html';
+
+        if (!isCurrentPage(targetPage)) {
+          event.preventDefault();
+          window.location.href = targetPage;
+        }
       });
     });
   });
 }
-//FOR-BIGCONTAINERIMAGES-END
 
-//BUTTON-FOR-CONTACT-SMOOTH-START
-function toTheBottom() {
-  const col1 = document.getElementById('col1');
-  const col2 = document.getElementById('col2');
-
-  col1.addEventListener('click', () => {
-    col2.scrollIntoView({ behavior: "smooth" });
-  });
+function isCurrentPage(pageName) {
+  const currentPage = window.location.href;
+  return currentPage.includes(pageName);
 }
 
-toTheBottom();
-//BUTTON-FOR-CONTACT-SMOOTH-END
+addClickListenerToItems();
+
+//FOR-BIGCONTAINERIMAGES-END
+
+
