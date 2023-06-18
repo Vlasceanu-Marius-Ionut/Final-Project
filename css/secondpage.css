@@ -81,7 +81,6 @@ header {
   height: 100%;
   background-image:url(../images/close-up-view-dark-fresh-roasted-coffee-beans-coffee-beans-background.jpg);
   background-size: contain;
-  background-repeat: x y;
   background-position: center;
   display: flex;
   flex-direction: column;
