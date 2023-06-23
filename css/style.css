@@ -204,7 +204,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
-  background-size: 16%;
+  background-size: 20%;
 }
 .item2 {
   background-image: url(../images/pngimg.com\ -\ coffee_machine_PNG102200.png);
@@ -212,7 +212,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
-  background-size: 25%;
+  background-size: 35%;
 }
 .item3 {
   background-image: url(../images/modern\ coffee.png);
@@ -220,6 +220,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
+  background-size:40% ;
 }
 .item4 {
   background-image: url(../images/pngegg.png);
@@ -227,7 +228,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
-  background-size: 30%;
+  background-size: 40%;
 }
 .item5 {
   background-image: url(../images/Micromarket-def-2.png);
@@ -242,7 +243,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   background-blend-mode:luminosity;
-  background-size: 40%;
+  background-size: 60%;
 }
 /*Border*/
 .item1:hover,
