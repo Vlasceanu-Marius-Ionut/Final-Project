@@ -37,6 +37,7 @@ a img {
   position: relative;
   right: 100%;
 }
+/*cart*/
 .cart {
   display: flex;
   background-color: rgb(243, 243, 243);
@@ -67,12 +68,14 @@ a img {
   width: 70%;
   margin-bottom: 30px;
 }
+/*WHERE-THE-IMAGES-ARE-PLACED*/
 #root {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap:20px;
 }
+/*SIDEBAR*/
 .sidebar {
   width: 40%;
   border-radius: 5px;
@@ -120,6 +123,7 @@ a img {
   object-fit: cover;
   object-position: center;
 }
+/*NAMES-FOR-THE-IMAGES>>CREATED AS INNERHTML*/
 .bottom {
   margin-top: 20px;
   width: 100px;
