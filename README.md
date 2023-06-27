@@ -12,3 +12,5 @@ Ultima parte contine mai multe linkuri care duc pe a ll-a pagina.
 Apasand butonul "contact" de pe a-ll-a pagina, acesta are un script de glisare pana in josul paginii, unde vom gasi:
 
 Harta si contactele.
+
+Pe a lll-a pagina se puteti gasi shop-ul
