@@ -12,8 +12,8 @@ body {
   justify-content: center;
   flex-direction: column;
   background-image: url(/images/backgroundcoffee.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 header {
   height: 80px;
@@ -22,8 +22,9 @@ header {
   border-radius: 3px;
   margin: 30px 0px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 30px;
 }
 header .logo {
   font-size: 30px;
@@ -32,7 +33,8 @@ header .logo {
 }
 a img {
   width: 50px;
-  margin-right: 200px;
+  position: relative;
+  right: 100%;
 }
 .cart {
   display: flex;
@@ -133,11 +135,11 @@ h2 {
 }
 button {
   width: 100%;
+  height: 40px;
   position: relative;
   border: none;
   border-radius: 5px;
   background-color: rgb(91, 20, 18);
-  padding: 7px 20px;
   cursor: pointer;
   color: white;
 }
@@ -172,4 +174,217 @@ button:hover{
 .fa-trash:hover{
   cursor: pointer;
   color: #380a0a;
+}
+/*Animation*/
+body {
+  animation: transitionIn 1s;
+}
+@keyframes transitionIn {
+  from {
+    opacity:0;
+    transform:rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+/* Media Queries */
+
+@media (max-width:1700px){
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/images/backgroundcoffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1160px) {
+  header {
+    width: 80%;
+  }
+  
+  .container {
+    width: 80%;
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  #root {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media query for 770px and lower */
+@media (max-width: 770px) {
+  header {
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: static;
+  }
+  header .logo {
+    display: none;
+  }
+  a img{
+    position: static;
+  }
+  .container {
+    width: 90%;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+  }
+  
+  .box {
+    padding: 10px;
+  }
+  
+  .foot {
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+  button {
+    width: 100%;
+    height: 5vh;
+    overflow: none;
+  }
+}
+
+/* Media query for 630px and lower */
+@media (max-width: 630px) {
+  header {
+    width: 60%;
+    padding: 15px;
+  }
+  .cart {
+    display: none;
+  }
+  .container {
+    width: 60%;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .box {
+    padding: 5px;
+  }
+  
+  .foot {
+    margin: 5px 0;
+    padding: 2px 0;
+  }
+  
+  .bottom {
+    margin-top: 10px;
+    width: 80px;
+  }
+}
+
+/* Media query for 490px and lower */
+@media (max-width: 490px) {
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  
+  .box {
+    padding: 3px;
+  }
+  
+  .foot {
+    margin: 3px 0;
+    padding: 1px 0;
+  }
+  
+  .bottom {
+    margin-top: 5px;
+    width: 70px;
+  }
+}
+
+/* Media query for 340px and lower */
+@media (max-width: 380px) {
+  header {
+    padding: 8px;
+  }
+  
+  .container {
+    margin-bottom: 8px;
+  }
+  
+  .sidebar {
+    padding: 3px;
+  }
+  
+  .box {
+    padding: 2px;
+  }
+  
+  .img-box {
+    height: 120px;
+  }
+  
+  .cart-item {
+    padding: 5px;
+    margin: 10px 5px;
+  }
+}
+button {
+  width: 100px;
+  height: 5vh;
+}
+
+/* Media query for 270px and lower */
+@media (max-width: 270px) {
+  header {
+    padding: 6px;
+  }
+  
+  .container {
+    margin-bottom: 6px;
+  }
+  
+  .sidebar {
+    padding: 2px;
+  }
+  
+  .box {
+    padding: 1px;
+  }
+  
+  .img-box {
+    height: 80px;
+  }
+  
+  .cart-item {
+    padding: 3px;
+    margin: 8px 3px;
+  }
 }

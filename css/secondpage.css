@@ -269,6 +269,20 @@ a .likefoot{
 ::marker {
   color: transparent;
 }
+/*ANIMATIONS*/
+body {
+  animation: transitionIn 1s;
+}
+@keyframes transitionIn {
+  from {
+    opacity:0;
+    transform:rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
 /*Likefoot*/
 /*MEDIA 1850PX*/
 @media  (max-width: 1850px) {

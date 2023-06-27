@@ -49,7 +49,7 @@ document.getElementById('root').innerHTML = categories.map((item)=>
         </div>
     <div class ='bottom'>
     <p>${title}</p>
-    <h2>$ ${price}.00</h2>`+
+    <h2>$${price}.00</h2>`+
     "<button onclick ='addtocart("+(i++)+")'>Add to cart</button>"+
     `</div>
     </div>`
@@ -79,14 +79,14 @@ function displaycart(){
         {
             let {image, title, price} = items;
             total=total+price;
-            document.getElementById("total").innerHTML = "$ "+total+".00";
+            document.getElementById("total").innerHTML = "$"+total+".00";
             return(
                 `<div class='cart-item'>
                 <div class='row-img'>
                     <img class='rowimg' src=${image}>
                 </div>
-                <p style='font-weight:bold;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+                <p style='margin:15px;'>${title}</p>
+                <h2 style='font-size: 13px;'>$${price}.00</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
             );
         }).join('');
