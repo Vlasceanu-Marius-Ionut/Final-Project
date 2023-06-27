@@ -130,6 +130,11 @@ a img {
   justify-content: space-between;
   height: 100%;
 }
+.bottom, p{
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0,55px 0px  rgba(252, 252, 252, 0.994) ;
+}
 h2 {
   font-size: 20px;
   color: rgb(255, 255, 255);
@@ -196,6 +201,11 @@ body {
   header {
     width: 80%;
   }
+  body {
+    background-image: url(../images/backgroundcoffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   
   .container {
     width: 80%;
@@ -222,6 +232,11 @@ body {
     justify-content: space-evenly;
     position: static;
     background-color: rgba(240, 248, 255, 0.458);
+  }
+  .body {
+    background-image: url(../images/backgroundcoffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   header .logo {
     display: none;
@@ -259,7 +274,7 @@ body {
   }
 }
 
-/* Media query for 630px and lower */
+/* Media query for px and lower */
 @media (max-width: 775px) {
   header {
     width: 60%;
