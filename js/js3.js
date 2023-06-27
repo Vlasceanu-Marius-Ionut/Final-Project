@@ -1,37 +1,37 @@
 const products = [
   {
     Id: 0,
-    image: 'images/americano12.jpg',
+    image: './images/americano12.jpg',
     title: 'Americano',
     price: 7,
   },
   {
     Id: 1,
-    image: 'images/d-Frappuccino.jpg',
+    image: './images/d-Frappuccino.jpg',
     title: 'Frappuccino',
     price:  12,
   },
   {
     Id: 2,
-    image: 'images/Falt-White.jpg',
+    image: './images/Falt-White.jpg',
     title: 'Falt-White',
     price: 10,
   },
   {
     Id: 3,
-    image: 'images/irish.jpg',
+    image: './images/irish.jpg',
     title: 'Irish',
     price: 8,
   },
   {
     Id: 4,
-    image: 'images/latte.jpg',
+    image: './images/latte.jpg',
     title: 'Latte',
     price: 8,
   },
   {
     Id: 5,
-    image: 'images/espresso.jpg',
+    image: './images/espresso.jpg',
     title: 'Espresso',
     price: 9,
   }

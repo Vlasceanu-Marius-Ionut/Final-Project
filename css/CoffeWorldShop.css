@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(/images/backgroundcoffee.jpg);
+  background-image: url(../images/backgroundcoffee.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -197,7 +197,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/images/backgroundcoffee.jpg);
+    background-image: url(../images/backgroundcoffee.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }

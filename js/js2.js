@@ -7,6 +7,12 @@ function toTheBottom() {
     col2.scrollIntoView({ behavior: "smooth" });
   });
 }
-
-toTheBottom();
 //BUTTON-FOR-CONTACT-SMOOTH-END
+//TO-SHOP-START//
+function toShop() {
+  const SHOP = document.getElementsByClassName('shop')[0];
+  SHOP.addEventListener('click', () => {
+    window.location.href = 'CoffeeWorldShop.html'
+  });
+}
+//TO-SHOP-END//

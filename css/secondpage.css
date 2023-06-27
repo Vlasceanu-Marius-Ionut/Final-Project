@@ -248,6 +248,24 @@ p {
   align-items: center;
   justify-content: center;
 }
+/*SHOP*/
+.shop {
+  width: 20%;
+  height: 40px;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.shop a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+.shop:hover {
+  background-color: brown;
+}
 /*Phone-and-emails*/
 .phone{
   width: 100%;
