@@ -48,6 +48,3 @@ function isCurrentPage(pageName) {
 
 addClickListenerToItems();
 
-//FOR-BIGCONTAINERIMAGES-END
-
-
