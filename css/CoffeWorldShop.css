@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #380a0a;
   background-image: url(../images/backgroundcoffee.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -191,17 +192,6 @@ body {
 }
 /* Media Queries */
 
-@media (max-width:1700px){
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url(../images/backgroundcoffee.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 @media (max-width: 1160px) {
   header {
     width: 80%;
@@ -231,6 +221,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     position: static;
+    background-color: rgba(240, 248, 255, 0.458);
   }
   header .logo {
     display: none;
@@ -246,15 +237,20 @@ body {
     width: 100%;
     margin-top: 15px;
     padding: 15px;
+    background-color: rgba(240, 248, 255, 0.458);
   }
-  
+  .sidebar,h2{
+    color: black;
+  }
   .box {
     padding: 10px;
+    background-color: rgba(240, 248, 255, 0.458);
   }
   
   .foot {
     margin: 10px 0;
     padding: 5px 0;
+    
   }
   button {
     width: 100%;
@@ -264,7 +260,7 @@ body {
 }
 
 /* Media query for 630px and lower */
-@media (max-width: 630px) {
+@media (max-width: 775px) {
   header {
     width: 60%;
     padding: 15px;

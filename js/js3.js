@@ -36,61 +36,111 @@ const products = [
     price: 9,
   }
 ];
-const categories = [...new Set(products.map((item)=>
-  {return item}))]
-  let i=0
-document.getElementById('root').innerHTML = categories.map((item)=>
-{
-  let {image, title, price} = item;
-  return(
+
+document.getElementById('root').innerHTML = products.map((item) => {
+  let { Id, image, title, price } = item;
+  return (
     `<div class='box'>
-        <div class='img-box'>
-            <img class='images' src=${image}></img>
-        </div>
-    <div class ='bottom'>
-    <p>${title}</p>
-    <h2>$${price}.00</h2>`+
-    "<button onclick ='addtocart("+(i++)+")'>Add to cart</button>"+
-    `</div>
+      <div class='img-box'>
+        <img class='images' src=${image}></img>
+      </div>
+      <div class='bottom'>
+        <p>${title}</p>
+        <h2>$${price}.00</h2>
+        <button onclick='addtocart(${Id})'>Add to cart</button>
+      </div>
     </div>`
-  )
-}).join('')
+  );
+}).join('');
 
-let cart =[];
+let cart = [];
 
-function addtocart(a){
-    cart.push({...categories[a]});
+function addtocart(productId) {
+  const selectedProduct = products.find((item) => item.Id === productId);
+  if (selectedProduct) {
+    cart.push({ ...selectedProduct });
     displaycart();
-}
-function delElement(a){
-    cart.splice(a, 1);
-    displaycart();
+  }
 }
 
-function displaycart(){
-    let j = 0, total=0;
-    document.getElementById("count").innerHTML=cart.length;
-    if(cart.length==0){
-        document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML = "$ "+0+".00";
-    }
-    else{
-        document.getElementById("cartItem").innerHTML = cart.map((items)=>
-        {
-            let {image, title, price} = items;
-            total=total+price;
-            document.getElementById("total").innerHTML = "$"+total+".00";
-            return(
-                `<div class='cart-item'>
-                <div class='row-img'>
-                    <img class='rowimg' src=${image}>
-                </div>
-                <p style='margin:15px;'>${title}</p>
-                <h2 style='font-size: 13px;'>$${price}.00</h2>`+
-                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
-            );
-        }).join('');
-    }
+function delElement(index) {
+  cart.splice(index, 1);
+  displaycart();
+}
 
-    
+function displaycart() {
+  let j = 0, total = 0;
+  const cartItemsContainer = document.getElementById("cartItem");
+  const totalPriceElement = document.getElementById("total");
+  const totalPriceCart = document.getElementById("count");
+
+  // Clear previous cart items
+  while (cartItemsContainer.firstChild) {
+    cartItemsContainer.removeChild(cartItemsContainer.firstChild);
+  }
+
+  document.getElementById("count").innerHTML = cart.length;
+
+  if (cart.length == 0) {
+    document.getElementById('cartItem').innerHTML = "Your cart is empty";
+    totalPriceElement.innerHTML = "$" + 0 + ".00";
+    totalPriceCart.innerHTML = "0"; // Reset the total count of items to 0
+  } else {
+    cart.forEach((item, index) => {
+      let { image, title, price } = item;
+      total = total + price;
+      totalPriceElement.innerHTML = "$" + total + ".00";
+
+      const cartItemDiv = document.createElement("div");
+      cartItemDiv.classList.add("cart-item");
+
+      const rowImgDiv = document.createElement("div");
+      rowImgDiv.classList.add("row-img");
+
+      const imgElement = document.createElement("img");
+      imgElement.classList.add("rowimg");
+      imgElement.src = image;
+
+      const titleElement = document.createElement("p");
+      titleElement.style.margin = "15px";
+      titleElement.innerText = title;
+
+      const priceElement = document.createElement("h2");
+      priceElement.style.fontSize = "13px";
+      priceElement.innerText = "$" + price + ".00";
+
+      const trashIcon = document.createElement("i");
+      trashIcon.classList.add("fa-solid", "fa-trash");
+      trashIcon.onclick = function () {
+        delElement(index);
+      };
+
+      rowImgDiv.appendChild(imgElement);
+      cartItemDiv.appendChild(rowImgDiv);
+      cartItemDiv.appendChild(titleElement);
+      cartItemDiv.appendChild(priceElement);
+      cartItemDiv.appendChild(trashIcon);
+
+      cartItemsContainer.appendChild(cartItemDiv);
+    });
+
+    totalPriceCart.innerHTML = cart.length; // Update the total count of items
+  }
+}
+
+function Alert() {
+  const cartItemsContainer = document.getElementById("cartItem");
+  while (cartItemsContainer.firstChild) {
+    cartItemsContainer.removeChild(cartItemsContainer.firstChild);
+  }
+  alert("Thank you for your purchase!");
+
+  const totalPriceElement = document.getElementById('total');
+  totalPriceElement.innerText = "$0.00";
+
+  const totalPriceCart = document.getElementById('count');
+  totalPriceCart.innerHTML = "0";
+
+  cart = [];
+  displaycart();
 }
