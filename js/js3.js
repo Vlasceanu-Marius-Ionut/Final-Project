@@ -1,4 +1,3 @@
-//CRATE-CONTAINERS
 const products = [
   {
     Id: 0,
@@ -37,7 +36,7 @@ const products = [
     price: 9,
   }
 ];
-//CREATE DIVS FOR CONTAINERS
+
 document.getElementById('root').innerHTML = products.map((item) => {
   let { Id, image, title, price } = item;
   return (
@@ -53,7 +52,7 @@ document.getElementById('root').innerHTML = products.map((item) => {
     </div>`
   );
 }).join('');
-//WORKING ON CART FUNCTIONALITY
+
 let cart = [];
 
 function addtocart(productId) {
@@ -75,7 +74,7 @@ function displaycart() {
   const totalPriceElement = document.getElementById("total");
   const totalPriceCart = document.getElementById("count");
 
-  //CLEAR PREVIOUS CART ITEMS-(BUGFIXED)
+  // Clear previous cart items
   while (cartItemsContainer.firstChild) {
     cartItemsContainer.removeChild(cartItemsContainer.firstChild);
   }
@@ -128,7 +127,7 @@ function displaycart() {
     totalPriceCart.innerHTML = cart.length; // Update the total count of items
   }
 }
-//ALLERTS AND MONEY
+
 function Alert() {
   const cartItemsContainer = document.getElementById("cartItem");
   while (cartItemsContainer.firstChild) {

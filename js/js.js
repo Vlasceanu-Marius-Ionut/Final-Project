@@ -48,3 +48,22 @@ function isCurrentPage(pageName) {
 
 addClickListenerToItems();
 
+
+function multiplyNumbers(a, b) {
+  return a * b;
+}
+
+// Test1
+let result = multiplyNumbers(2, 3);
+let expected = 6;
+console.log(result === expected, `Error: Result ${result} is not the expected value ${expected}`);
+
+// Test2
+result = multiplyNumbers(-5, 10);
+expected = -50;
+console.log(result === expected, `Error: Result ${result} is not the expected value ${expected}`);
+
+// Test3
+result = multiplyNumbers(-4, -2);
+expected = 8;
+console.log(result === expected, `Error: Result ${result} is not the expected value ${expected}`);

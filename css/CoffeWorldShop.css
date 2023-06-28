@@ -37,7 +37,6 @@ a img {
   position: relative;
   right: 100%;
 }
-/*cart*/
 .cart {
   display: flex;
   background-color: rgb(243, 243, 243);
@@ -46,9 +45,6 @@ a img {
   padding: 7px 10px;
   border-radius:3px;
   width: 80px;
-}
-.box {
-  background-color: rgba(160, 160, 160, 0.229);
 }
 .fa-solid {
   color: rgb(131, 39, 27);
@@ -68,14 +64,12 @@ a img {
   width: 70%;
   margin-bottom: 30px;
 }
-/*WHERE-THE-IMAGES-ARE-PLACED*/
 #root {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap:20px;
 }
-/*SIDEBAR*/
 .sidebar {
   width: 40%;
   border-radius: 5px;
@@ -109,6 +103,7 @@ a img {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 15px;
+  background-color: rgba(160, 160, 160, 0.229);
 }
 .img-box {
   width: 100%;
@@ -123,7 +118,6 @@ a img {
   object-fit: cover;
   object-position: center;
 }
-/*NAMES-FOR-THE-IMAGES>>CREATED AS INNERHTML*/
 .bottom {
   margin-top: 20px;
   width: 100px;
