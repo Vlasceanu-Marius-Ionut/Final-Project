@@ -1,5 +1,5 @@
 Am creat o pagina de prezentare pentru un magazin de cafea (fictiv).
-Am folosit HTML-CSS-JAVASCRIPT
+Am folosit HTML-CSS-JAVASCRIPT.
 
 Proiectul este unul simplu, prima parte a proiectului putem vedea 6 imagini cu stiluri si denumiri, fiecare duce in pagina a ll-a unde vom gasii informatii despre acestea, avant legatura cu brandul.
 
