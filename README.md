@@ -13,4 +13,4 @@ Apasand butonul "contact" de pe a-ll-a pagina, acesta are un script de glisare p
 
 Harta si contactele.
 
-Pe a lll-a pagina se puteti gasi shop-ul.
+Pe a lll-a pagina se puteti gasi shop-ul..
